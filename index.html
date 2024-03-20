@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bienvenidos al ¡Encriptador de texto!</title>
+</head>
+
+<body>
+    <section>
+        <div>
+            <textarea class="rectanguloDerecha" id="panelDerecho" cols="30" rows="10" disabled></textarea>
+
+            <img src="Media/Muñeco.png" alt="Persona examinando un diamante" class="imagenMuneco">
+
+            <div class="contenedorTexto">
+                <p class="msj1">No se encontró ningún mensaje</p>
+                <p class="msj2">Ingresa el texto que desees encriptar y/o desencriptar.</p>
+                <img src="Media/reset.png" alt="Botón de reset" class="btnReset" onclick="reset();">
+            </div>
+        </div>
+    </section>
+
+    <section class="rectanguloIzquierda">
+
+        <div class="zonaLogo">
+            <img src="Media/Logo.png" alt="Logo de Alura" class="logoAlura">
+        </div>
+        <div class="zonaTexto">
+            <textarea id="cuadroTexto" cols="30" rows="10" placeholder="Ingrese el texto aqui" autofocus onkeypress="return caracterEspecial(event);"></textarea>
+        </div>
+    
+        <div class="zonaExclamacion">
+            <img src="Media/Exclamacion.png" alt="Logo de exclamacion" class="logoExclamacion">
+            <p>Sólo letras minúsculas y sin acentos</p>
+        </div>
+    
+        <div class="zonaBotones">
+            <button onclick="encriptar();" class="btnEncriptar">Encriptar</button>
+            <button onclick="desencriptar();" class="btnDesencriptar">Desencriptar</button>
+        </div>
+
+    </section>  
+
+    <script src="app.js"></script>
+</body>
+
+<footer>
+
+</footer>
+
+</html>
